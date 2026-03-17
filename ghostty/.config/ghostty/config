@@ -1,0 +1,30 @@
+theme = "12-bit Rainbow"
+font-family = "Hack Nerd Font"
+font-style = bold
+font-size = 14
+cursor-style = bar
+cursor-style-blink = true
+adjust-cell-height = 15%
+
+window-padding-x = 8
+window-padding-y = 0,0
+window-padding-balance = true
+window-padding-color = background
+window-save-state = always
+background-opacity = 0.95
+background-blur = 20
+
+macos-icon = glass
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+window-colorspace = display-p3
+
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+copy-on-select = clipboard
+
+# keybinds
+keybind = cmd+shift+n=new_tab
+keybind = cmd+shift+right=next_tab
+keybind = cmd+shift+left=previous_tab
+keybind = cmd+shift+backspace=close_surface

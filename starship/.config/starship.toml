@@ -1,0 +1,38 @@
+add_newline = false
+palette = "rainbow12"
+
+format = "$git_branch$directory$cmd_duration$character"
+
+[directory]
+format = "[$path]($style) "
+style = "bold white"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+format = "[\\[](bold white)[$branch](bold green)[\\]](bold white) "
+symbol = ""
+
+[git_status]
+format = "[$all_status$ahead_behind]($style) "
+style = "bold yellow"
+
+[cmd_duration]
+format = "[took $duration]($style) "
+style = "bold dimmed"
+min_time = 2_000
+
+[character]
+success_symbol = "[❯](bold white)"
+error_symbol = "[❯](bold red)"
+
+[palettes.rainbow12]
+red = "#c06060"
+green = "#40d080"
+yellow = "#e0d000"
+blue = "#3060b0"
+purple = "#603090"
+cyan = "#0090c0"
+white = "#dbded8"
+dimmed = "#685656"
+orange = "#e09040"
