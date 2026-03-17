@@ -1,4 +1,9 @@
 # dotfiles
+if [[ ! -f /tmp/.fastfetch-done ]]; then
+    fastfetch
+    touch /tmp/.fastfetch-done
+fi
+
 precmd()  { print -Pn '\e]2;%~\a' }
 preexec() { printf '\e]2;%s\a' "${1%% *}" }
 
@@ -11,5 +16,6 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 source <(carapace _carapace zsh)
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(starship init zsh)"

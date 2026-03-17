@@ -1,7 +1,7 @@
 add_newline = false
 palette = "rainbow12"
 
-format = "$git_branch$directory$cmd_duration$character"
+format = "$sudo$git_branch$directory$cmd_duration$character"
 
 [directory]
 format = "[$path]($style) "
@@ -21,6 +21,11 @@ style = "bold yellow"
 format = "[took $duration]($style) "
 style = "bold dimmed"
 min_time = 2_000
+
+[sudo]
+disabled = false
+format = "[as sudo]($style) "
+style = "bold red"
 
 [character]
 success_symbol = "[❯](bold white)"
