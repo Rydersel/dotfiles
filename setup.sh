@@ -6,7 +6,7 @@ brew bundle
 
 for d in */; do
     [[ "${d%/}" == ".git" ]] && continue
-    stow --restow "${d%/}"
+    stow --no-folding --restow "${d%/}"
 done
 
 if [[ "$(uname)" == "Darwin" ]]; then

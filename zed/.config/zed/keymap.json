@@ -1,0 +1,78 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "(Workspace || Editor)",
+    "bindings": {
+      "cmd-2": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-3": "git_panel::OpenMenu"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-cmd-4": "editor::ToggleTabBar"
+    }
+  },
+  {
+    "context": "GitPicker",
+    "bindings": {
+      "cmd-3": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-k cmd-3": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-k cmd-4": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-k cmd-3": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-cmd-3": "editor::FoldAtLevel_3"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-|": [
+        "tab_switcher::Toggle",
+        {
+          "select_last": true
+        }
+      ]
+    }
+  }
+]

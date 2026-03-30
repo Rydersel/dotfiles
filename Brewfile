@@ -1,5 +1,7 @@
 cask "ghostty"
+cask "zed"
 cask "font-hack-nerd-font"
+cask "font-jetbrains-mono"
 brew "starship"
 brew "carapace"
 brew "zsh-autosuggestions"
