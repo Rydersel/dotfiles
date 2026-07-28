@@ -7,10 +7,20 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "edit_predictions": {
     "provider": "none"
   },
   "agent": {
+    "dock": "right",
     "button": false,
     "enabled": false,
     "enable_feedback": false,
@@ -43,6 +53,7 @@
     "show_sign_in": false
   },
   "project_panel": {
+    "dock": "left",
     "file_icons": true,
     "indent_guides": {
       "show": "never"
@@ -81,7 +92,6 @@
     "graphql": true,
     "golangci-lint": true,
     "helm": true,
-    "html": true,
     "java": true,
     "latex": true,
     "lua": true,
